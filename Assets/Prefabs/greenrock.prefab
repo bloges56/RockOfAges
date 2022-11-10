@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2591918929289631735}
   - component: {fileID: 2591918929289631624}
   - component: {fileID: 2591918929289631625}
+  - component: {fileID: 4880974344822084768}
   m_Layer: 0
   m_Name: greenrock
   m_TagString: Untagged
@@ -119,3 +120,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4880974344822084768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2591918929289631732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fdb408cc52fdf4eab6da94465fd6e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
