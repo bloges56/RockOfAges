@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     float elapsedTime;
 
+    int numRocks;
+
     Timer timer;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         timer = gameObject.GetComponent<Timer>();
         timer.Duration = 20f;
         timer.Run();
+        numRocks = 0;
     }
 
     // Update is called once per frame
@@ -30,8 +33,9 @@ public class GameManager : MonoBehaviour
     {
         if(timer.Running)
         {
+            numRocks = GameObject.FindGameObjectsWithTag("Rock").Length;
             Debug.Log("Timer Running");
-            if(elapsedTime >= 1f)
+            if(elapsedTime >= 1f  && numRocks < 3)
             {
                 int rng = (int)Random.Range(0,3);
                 GameObject rockToSpawn;
